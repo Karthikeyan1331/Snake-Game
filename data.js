@@ -1,6 +1,6 @@
 function updatedata(data){
     $.ajax({
-        url: "http://localhost:3000/",  // URL of your JSON file on the server
+        url: "https://snake-game-20e8.onrender.com",  // URL of your JSON file on the server
         type: "POST",              // Change to the appropriate method for your server (e.g., "POST" or "PUT")
         contentType: "application/json",
         data: JSON.stringify(data),
