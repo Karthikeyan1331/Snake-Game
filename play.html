@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="play.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="TopRightNav">
+      <div class="btn-login btn-vertical-center">Login</div>
+
+      <div class="leaderboard btn-vertical-center lead" title="leaderboard">
+        <i class="bi bi-trophy-fill"></i>
+      </div>
+      <div class="user" title="">
+        <i class="bi bi-person-circle"></i>
+      </div>
+      <div class="btn-logout btn-vertical-center">Logout</div>
+    </div>
+    <div class="giveGap">
+      <div class="Heading">Snake Game</div>
+    </div>
+    <div id="id01" class="popup">
+      <form class="popup-content animate">
+        <div class="imgcontainer">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="close"
+            title="Close popup"
+            >&times;</span
+          >
+          <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar" /> -->
+        </div>
+
+        <div class="container">
+         <div id="textWindow">
+            Game Over and your score is <span id="ScorePop"></span>
+         </div>
+
+          <button onclick="window.location.reload()">Play Agian</button>
+          
+        </div>
+      </form>
+    </div>
+    <div id="game">
+      <div id="score">Score: 0</div>
+      <canvas id="snake" width="400" height="400"></canvas>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="play.js"></script>
+  </body>
+</html>

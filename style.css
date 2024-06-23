@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+body {
+  background-color: rgb(85, 2, 129);
+  font-family: "Rakkas", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.Heading {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+  letter-spacing: 0.1cap;
+}
+.TopRightNav {
+  float: right;
+  display: flex;
+  margin: 1vw;
+}
+.TopRightNav div {
+  margin-left: 0.5vw;
+}
+.btn-login,
+.btn-logout {
+  z-index: 1;
+  display: none;
+  color: white;
+  font-size: 1.6vw;
+  background-color: rgb(0, 128, 70);
+  padding: 0.5vw 1vw;
+  border-radius: 1vw;
+  box-shadow: 0px 0px 1px 0px green;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.btn-logout {
+  box-shadow: 0px 0px 1px 0px rgb(117, 2, 2);
+  background-color: rgb(152, 1, 1);
+}
+.btn-login:hover,
+.btn-logout:hover {
+  opacity: 0.8;
+}
+.headTop {
+  width: 100%;
+  position: relative;
+}
+
+.user,
+.leaderboard {
+  z-index: 1;
+  color: rgb(244, 244, 244);
+  font-size: 3vw;
+  padding: 1vw;
+  cursor: pointer;
+}
+.leaderboard {
+  color: rgb(255, 255, 255);
+  font-size: 2vw;
+  background-color: rgb(2, 133, 0);
+  padding: 0.5vw 1vw;
+  border-radius: 1vw;
+}
+.user:hover {
+  color: aliceblue;
+}
+
+.btn-vertical-center {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.centered {
+  position: absolute;
+  left: 40%;
+}
+.gameboard {
+  color: white;
+  font-size: 3vw;
+}
+.gameboard div {
+  margin: 3vh;
+}
+.play,
+.leader {
+  background-color: rgb(55, 104, 253);
+  padding: 0.5vw 1vw;
+  border-radius: 1vw;
+  transform: scale(1);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.play:hover,
+.leader:hover {
+  transform: scale(1.1);
+}
+.leader{
+  background-color: rgb(21, 160, 3);
+}
